@@ -1,44 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); /* importa a fonte 'Montserrat' do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap'); /* importa a fonte 'Lemon' do Google Fonts */
 
-:root {
+:root { /* Define variáveis globais (que podem ser usadas em qualquer lugar do arquivo) */
     --laranja-claro: #FF862A;
     --alto-contraste-fundo: #000000;
     --alto-contraste-texto: #ffffff;
     --alto-contraste-link: #ffd700;
+    /* As linhas seguintes criam variáveis com nomes fáceis de entender (como --laranja-claro) para armazenar cores */
 }
 
-body {
-    font-size: 1rem;
-    font-family: 'Montserrat';
+body { /* Seleciona o corpo do documento HTML */
+    font-size: 1rem; /* Define o tamanho da fonte padrão para o corpo */
+    font-family: 'Montserrat'; /* Define a fonte 'Montserrat' como a padrão para o texto */
 }
 
-header {
+header { /* Seleciona o elemento de cabeçalho da página */
     background-color: #ffffff;
+    /* muda a cor de fundo do cabeçalho da página para branco */
 }
 
 
 section {
     padding-bottom: 5rem;
-}
+} /* Esse código CSS adiciona um espaço de 5rem na parte de baixo de todas as seções da sua página */
 
 
-.nav-link {
-    color: #CB6D43;
-    font-weight: 600;
+.nav-link { /* seleciona todos os elementos HTML que têm a classe nav-link para que você possa estilizar eles */
+    color: #CB6D43; /* Define a cor do texto do link */
+    font-weight: 600; /* Deixa o texto do link mais grosso (em negrito) */
 }
 
 .inicio-fundo {
-    /* aula 3 */
-    background-image: url('img/4965007.jpg');
-    /* Substitua pelo caminho da sua imagem */
-    background-size: cover;
-    background-position: right;
-    border-radius: 80px;
-    width: 100%;
-    height: 606px;
-    padding: 40px;
-    margin: 0 auto;
+    background-image: url('img/4965007.jpg'); 
+    /* Define a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir todo o espaço disponível. */
+    background-position: right; /* Alinha a imagem à direita. */
+    border-radius: 80px; /*  Arredonda os cantos. */
+    width: 100%; /* Definem a largura e a altura do elemento. */
+    height: 606px; /* Definem a largura e a altura do elemento. */
+    padding: 40px; /* Cria um espaço interno */
+    margin: 0 auto; /* Centraliza o elemento. */
 }
 
 /* posicionamento para a imagem à direita */
