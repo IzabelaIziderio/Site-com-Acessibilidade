@@ -44,158 +44,150 @@ section {
 
 /* posicionamento para a imagem à direita */
 .img-inicio {
-    position: absolute;
-    right: 0;
-    top: 18rem;
-    width: 45rem;
-    height: auto;
+    position: absolute; /* Define o posicionamento do elemento de forma absoluta */
+    right: 0;          /* Alinha a imagem ao lado direito da página */
+    top: 18rem;        /* Define a distância do topo da página */
+    width: 45rem;      /* Define a largura da imagem */
+    height: auto;      /* Mantém a proporção original da imagem */
 }
 
 
 .esquerda-conteudo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
+    display: flex;         /* Habilita o modelo de layout flexbox */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    align-items: flex-start; /* Alinha os itens ao início da coluna */
+    gap: 1rem;             /* Define o espaçamento entre os itens */
 }
 
 
 .botao-inicio {
-    background-color: var(--laranja-claro);
-    border-radius: 30px;
-    border: none;
-    width: 14em;
-    height: 3em;
-    align-content: center;
-
+    background-color: var(--laranja-claro); /* Define a cor de fundo usando uma variável */
+    border-radius: 30px; /* Arredonda as bordas do botão */
+    border: none;        /* Remove a borda do botão */
+    width: 14em;         /* Define a largura do botão */
+    height: 3em;         /* Define a altura do botão */
+    align-content: center; /* Centraliza o conteúdo (texto) no botão */
 }
 
 .display-4 {
-    text-shadow: -5px 5px var(--laranja-claro);
+    text-shadow: -5px 5px var(--laranja-claro); /* Cria uma sombra no texto */
 }
 
 
 #tropicalia {
-    position: relative;
-    padding-top: 5rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    background: url('img/flor.png') top right no-repeat,
-        url('img/flor-esquerda.png') bottom left no-repeat;
-    background-size: 180px 180px;
-    /* Ajuste o tamanho conforme necessário */
+    position: relative; /* Define o posicionamento do elemento de forma relativa */
+    padding-top: 5rem;  /* Adiciona espaçamento interno no topo */
+    margin-top: 3rem;   /* Adiciona espaçamento externo no topo */
+    margin-bottom: 3rem; /* Adiciona espaçamento externo na parte inferior */
+    background: url('img/flor.png') top right no-repeat, /* Adiciona a primeira imagem de fundo */
+        url('img/flor-esquerda.png') bottom left no-repeat; /* Adiciona a segunda imagem de fundo */
+    background-size: 180px 180px; /* Define o tamanho das imagens de fundo */
 }
 
 #tropicalia .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-    /* Garante que o conteúdo fica acima das imagens do background */
+    display: flex;         /* Habilita o modelo de layout flexbox */
+    align-items: center;   /* Centraliza os itens verticalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    position: relative;    /* Define o posicionamento do elemento de forma relativa */
+    z-index: 1;            /* Define a ordem de empilhamento para ficar acima das imagens de fundo */
 }
 
-
 h2 {
-    font-family: 'Lemon', serif;
-    font-size: 2.5em;
-    font-style: normal;
-    color: var(--laranja-claro);
+    font-family: 'Lemon', serif; /* Define a fonte do texto */
+    font-size: 2.5em;          /* Define o tamanho da fonte */
+    font-style: normal;        /* Define o estilo da fonte (normal) */
+    color: var(--laranja-claro); /* Define a cor do texto usando uma variável */
 }
 
 #galeria {
-    background-color: #FAF4F4;
-
+    background-color: #FAF4F4; /* Define a cor de fundo da seção */
 }
 
 .fundo-galeria {
-    background: url('img/flor-bottom-direita.png') bottom right no-repeat;
-    background-size: 180px 180px;
+    background: url('img/flor-bottom-direita.png') bottom right no-repeat; /* Adiciona uma imagem de fundo */
+    background-size: 180px 180px; /* Define o tamanho da imagem de fundo */
 }
 
 #contato {
-    background-image: url('img/4965007.jpg');
-    background-size: cover;
-    padding: 4rem 0;
-    /* Espaçamento interno para a seção de contato */
-
+    background-image: url('img/4965007.jpg'); /* Define a imagem de fundo */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o espaço */
+    padding: 4rem 0;        /* Adiciona espaçamento interno no topo e na parte inferior */
 }
 
 .formulario {
-    background-color: #ffffff;
-    padding: 2rem;
-    /* Espaçamento interno dentro do formulário */
-    border-radius: 10px;
-    /* Borda arredondada para o formulário */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Sombra suave para destacar o formulário */
-    font-weight: bold;
+    background-color: #ffffff; /* Define a cor de fundo do formulário */
+    padding: 2rem;             /* Adiciona espaçamento interno */
+    border-radius: 10px;       /* Arredonda as bordas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    font-weight: bold;         /* Deixa o texto em negrito */
 }
 
 .formulario button {
-    background-color: #CB6D43;
-    border: none;
-    font-weight: bold;
+    background-color: #CB6D43; /* Define a cor de fundo do botão */
+    border: none;              /* Remove a borda do botão */
+    font-weight: bold;         /* Deixa o texto em negrito */
 }
 
 .form-control {
-    background-color: #F1EDEF;
+    background-color: #F1EDEF; /* Define a cor de fundo do campo de formulário */
 }
+
 .menu-acessibilidade{
-    position: fixed;
-    top:2rem;
-    right:20px;
-    z-index: 1000;
+    position: fixed; /* Fixa o elemento na tela */
+    top:2rem;       /* Define a distância do topo */
+    right:20px;     /* Define a distância da direita */
+    z-index: 1000;   /* Define a ordem de empilhamento (fica acima de outros elementos) */
 }
 
 .rotacao-botao{
-    transform: rotate(-90deg);
-    transform-origin: right center;
+    transform: rotate(-90deg);    /* Rotaciona o botão 90 graus no sentido anti-horário */
+    transform-origin: right center; /* Define o ponto de origem da rotação */
 }
 
 .opcoes-acessibilidade{
-    margin-top:10px;
-    display: flex;
-    flex-direction: column;
+    margin-top:10px;       /* Adiciona espaçamento externo no topo */
+    display: flex;         /* Habilita o modelo de layout flexbox */
+    flex-direction: column; /* Organiza os botões em uma coluna */
 }
 
 .opcoes-acessibilidade button{
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Adiciona espaçamento na parte inferior dos botões */
 }
+
 .apresenta-lista{
-    display: none;
+    display: none; /* Oculta o elemento da página */
 }
 
 .alto-contraste{
-    background-color: var(--alto-contraste-fundo);
-    color: var(--alto-contraste-texto);
+    background-color: var(--alto-contraste-fundo); /* Define a cor de fundo para o modo de alto contraste */
+    color: var(--alto-contraste-texto);           /* Define a cor do texto para o modo de alto contraste */
 }
 
 .alto-contraste header,
 .alto-contraste footer,
 .alto-contraste .formulario{
-    background-color: var(--alto-contraste-fundo);
-    color: var(--alto-contraste-texto);
+    background-color: var(--alto-contraste-fundo); /* Define a cor de fundo para elementos específicos no modo de alto contraste */
+    color: var(--alto-contraste-texto);           /* Define a cor do texto para os mesmos elementos */
 }
 
 .alto-contraste .nav-link{
-    color: var(--alto-contraste-link);
+    color: var(--alto-contraste-link); /* Define a cor dos links de navegação para o modo de alto contraste */
 }
 
 .alto-contraste .botao-inicio,
 .alto-contraste .formulario button,
 .alto-contraste .btn-primary{
-    background-color: var(--alto-contraste-link);
-    color: var(--alto-contraste-fundo)
+    background-color: var(--alto-contraste-link); /* Define a cor de fundo de botões para o modo de alto contraste */
+    color: var(--alto-contraste-fundo)             /* Define a cor do texto dos botões para o modo de alto contraste */
 }
 
 .alto-contraste #tropicalia {
-    background: none;
+    background: none; /* Remove a imagem de fundo quando o modo de alto contraste está ativo */
 }
 
 .alto-contraste #galeria {
-    background-color: var(--alto-contraste-fundo);
+    background-color: var(--alto-contraste-fundo); /* Define a cor de fundo da galeria para o modo de alto contraste */
 }
 .alto-contraste .fundo-galeria {
-    background: none;
+    background: none; /* Remove a imagem de fundo da galeria quando o modo de alto contraste está ativo */
 }
